@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sendai-yugata-aga.koutoudai-yugata-naika.clinic/sitemap-index.xml

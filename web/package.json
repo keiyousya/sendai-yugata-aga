@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "type": "module",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.0",
+    "@fontsource/m-plus-1p": "^5.2.9",
+    "astro": "^6.3.7",
+    "sharp": "^0.34.5"
+  }
+}

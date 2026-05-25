@@ -1,0 +1,168 @@
+---
+
+---
+
+<section id="flow" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      診療の流れ
+      <span>FLOW</span>
+    </h2>
+
+    <div class="flow-content">
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3 class="step-title">ご予約</h3>
+            <p class="step-description">
+              お電話またはWeb予約フォームからご予約ください。
+              当日予約も可能です。
+            </p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3 class="step-title">来院・受付</h3>
+            <p class="step-description">
+              ご予約時間にクリニックへお越しください。
+              受付で問診票をご記入いただきます。
+            </p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3 class="step-title">医師の診察</h3>
+            <p class="step-description">
+              医師が頭髪の状態を確認し、治療方針をご説明します。
+              ご不明点はお気軽にご質問ください。
+            </p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3 class="step-title">お薬の処方</h3>
+            <p class="step-description">
+              デュタステリドを処方いたします。
+              服用方法や注意点をご説明します。
+            </p>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3 class="step-title">定期的な通院</h3>
+            <p class="step-description">
+              1〜3ヶ月ごとに来院いただき、経過を確認します。
+              継続的な治療で効果を実感していただけます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .flow-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .flow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .flow-step {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .flow-step:last-child {
+    padding-bottom: 0;
+  }
+
+  .flow-step::before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 56px;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border);
+  }
+
+  .flow-step:last-child::before {
+    display: none;
+  }
+
+  .step-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .step-content {
+    flex: 1;
+    padding-top: 4px;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+  }
+
+  .step-description {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 768px) {
+    .flow-step {
+      gap: 16px;
+      padding-bottom: 32px;
+    }
+
+    .flow-step::before {
+      left: 20px;
+      top: 48px;
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      font-size: 1.1rem;
+    }
+
+    .step-title {
+      font-size: 1.1rem;
+    }
+
+    .step-description {
+      font-size: 0.9rem;
+    }
+  }
+</style>

@@ -1,0 +1,146 @@
+---
+
+---
+
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      AGAとは
+      <span>ABOUT AGA</span>
+    </h2>
+
+    <div class="about-content">
+      <div class="about-main">
+        <p class="about-lead">
+          AGA（Androgenetic Alopecia）は、<strong>男性型脱毛症</strong>のことです。
+        </p>
+        <p>
+          日本人男性の約3人に1人がAGAと言われており、20代から始まることもあります。
+          額の生え際や頭頂部の髪が徐々に薄くなっていくのが特徴です。
+        </p>
+        <p>
+          AGAは進行性の脱毛症であり、<strong>放置すると徐々に進行</strong>していきます。
+          早期に治療を開始することで、より効果的に薄毛の進行を抑えることができます。
+        </p>
+      </div>
+
+      <div class="about-features">
+        <div class="feature">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 8v4l3 3"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">進行性</h3>
+          <p class="feature-text">何もしなければ<br />徐々に進行します</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">治療可能</h3>
+          <p class="feature-text">医学的な治療で<br />進行を抑制できます</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">早期治療が有効</h3>
+          <p class="feature-text">早めの対処で<br />効果が期待できます</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section {
+    background: var(--color-bg-section);
+  }
+
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about-main {
+    margin-bottom: 48px;
+  }
+
+  .about-lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: var(--color-primary);
+  }
+
+  .about-main p {
+    margin-bottom: 16px;
+    color: var(--color-text);
+  }
+
+  .about-main strong {
+    color: var(--color-primary);
+  }
+
+  .about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 32px 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .about-lead {
+      font-size: 1.1rem;
+    }
+
+    .about-features {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .feature {
+      padding: 24px 20px;
+    }
+  }
+</style>
