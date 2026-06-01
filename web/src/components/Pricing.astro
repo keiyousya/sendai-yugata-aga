@@ -47,8 +47,19 @@
         </div>
       </div>
 
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/dutasteride.jpg" alt="デュタステリド錠0.5mgZA「トーワ」" />
+        </div>
+        <div class="product-info">
+          <h4 class="product-name">デュタステリド錠0.5mgZA「トーワ」</h4>
+          <p class="product-description">当院で処方する医薬品です。1日1回1錠を服用します。</p>
+        </div>
+      </div>
+
       <div class="pricing-notes">
         <p>※ 処方は医師の診察後となります</p>
+        <p>※ 診察により最大6ヶ月分まで処方可能です</p>
         <p>※ 効果には個人差があります</p>
       </div>
     </div>
@@ -156,6 +167,36 @@
     color: var(--color-text);
   }
 
+  .product-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+  }
+
+  .product-image img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+
   .pricing-notes {
     text-align: center;
   }
@@ -177,6 +218,16 @@
 
     .price-main {
       font-size: 1.5rem;
+    }
+
+    .product-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+    }
+
+    .product-image img {
+      width: 140px;
     }
   }
 </style>
