@@ -6,7 +6,8 @@
   <div class="footer-content container">
     <div class="footer-main">
       <div class="footer-brand">
-        <span class="brand-name">仙台夕方<span>AGA</span></span>
+        <img src="/logo.svg" alt="" class="footer-logo" />
+        <img src="/logo-text.svg" alt="仙台夕方AGA" class="footer-logo-text" />
       </div>
       <div class="footer-clinic">
         医療機関：勾当台夕方内科クリニック
@@ -41,17 +42,21 @@
   }
 
   .footer-brand {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
   }
 
-  .brand-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
+  .footer-logo {
+    height: 48px;
+    width: auto;
   }
 
-  .brand-name span {
-    color: var(--color-highlight);
+  .footer-logo-text {
+    height: 32px;
+    width: auto;
   }
 
   .footer-clinic {

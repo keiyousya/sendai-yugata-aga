@@ -5,7 +5,8 @@
 <header class="header">
   <div class="header-inner container">
     <a href="/" class="logo">
-      仙台夕方<span>AGA</span>
+      <img src="/logo.svg" alt="" class="logo-icon" />
+      <img src="/logo-text.svg" alt="仙台夕方AGA" class="logo-text" />
     </a>
     <nav class="nav">
       <a href="#about">AGAとは</a>
@@ -54,14 +55,25 @@
   }
 
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.02em;
   }
 
-  .logo span {
-    color: var(--color-highlight);
+  .logo-icon {
+    height: 32px;
+    width: auto;
+    position: relative;
+    top: -3px;
+  }
+
+  .logo-text {
+    height: 26px;
+    width: auto;
   }
 
   .nav {
