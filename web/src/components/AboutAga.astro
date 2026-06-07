@@ -26,26 +26,9 @@
 
       <div class="mechanism-box">
         <h4 class="mechanism-title">AGAのメカニズム</h4>
-        <div class="mechanism-flow">
-          <div class="mechanism-step">
-            <span class="step-label">テストステロン</span>
-            <span class="step-desc">男性ホルモン</span>
-          </div>
-          <div class="mechanism-arrow">
-            <span class="arrow-label">5α還元酵素</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="mechanism-step highlight">
-            <span class="step-label">DHT</span>
-            <span class="step-desc">ジヒドロテストステロン</span>
-          </div>
-          <div class="mechanism-arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="mechanism-step danger">
-            <span class="step-label">毛髪の軟毛化</span>
-            <span class="step-desc">細く短い毛に</span>
-          </div>
+        <div class="mechanism-image">
+          <img src="/mechanism-pc.png" alt="AGAのメカニズム：テストステロンが5α還元酵素によってDHTに変換され、毛髪の軟毛化を引き起こす" class="mechanism-img-pc" />
+          <img src="/mechanism-sp.png" alt="AGAのメカニズム：テストステロンが5α還元酵素によってDHTに変換され、毛髪の軟毛化を引き起こす" class="mechanism-img-sp" />
         </div>
         <p class="mechanism-note">
           AGAの原因物質である<strong>DHT（ジヒドロテストステロン）</strong>は、テストステロンが5α還元酵素によって変換されることで生成されます。DHTが毛乳頭細胞に作用すると、毛髪の成長期が短縮され、髪が十分に成長する前に抜け落ちてしまいます。
@@ -102,15 +85,18 @@
           </div>
           <div class="prevention-chart">
             <p class="chart-title">年代別AGA発症率</p>
+            <p class="chart-subtitle">20代・30代でも多くの方が発症しています</p>
             <div class="chart-bars">
-              <div class="chart-bar">
+              <div class="chart-bar highlight">
+                <span class="bar-badge">4人に1人</span>
                 <div class="bar-wrapper">
                   <div class="bar-fill" style="height: 51px"></div>
                 </div>
                 <span class="bar-value">約26%</span>
                 <span class="bar-label">20代</span>
               </div>
-              <div class="chart-bar">
+              <div class="chart-bar highlight">
+                <span class="bar-badge">3人に1人</span>
                 <div class="bar-wrapper">
                   <div class="bar-fill" style="height: 63px"></div>
                 </div>
@@ -118,6 +104,7 @@
                 <span class="bar-label">30代</span>
               </div>
               <div class="chart-bar">
+                <span class="bar-badge empty">&nbsp;</span>
                 <div class="bar-wrapper">
                   <div class="bar-fill" style="height: 86px"></div>
                 </div>
@@ -125,6 +112,7 @@
                 <span class="bar-label">40代</span>
               </div>
               <div class="chart-bar">
+                <span class="bar-badge empty">&nbsp;</span>
                 <div class="bar-wrapper">
                   <div class="bar-fill" style="height: 100px"></div>
                 </div>
@@ -134,31 +122,6 @@
             </div>
             <p class="chart-note">※ 日本皮膚科学会ガイドラインより</p>
           </div>
-        </div>
-        <div class="comparison-section">
-          <p class="comparison-title">早期治療で毛髪を維持</p>
-          <div class="comparison-chart">
-            <div class="comparison-y-axis">
-              <span>多</span>
-              <span>毛髪量</span>
-              <span>少</span>
-            </div>
-            <div class="comparison-graph">
-              <div class="graph-line treated">
-                <span class="line-label">20代から内服</span>
-              </div>
-              <div class="graph-line untreated">
-                <span class="line-label">未治療</span>
-              </div>
-              <div class="graph-x-axis">
-                <span>20代</span>
-                <span>30代</span>
-                <span>40代</span>
-                <span>50代</span>
-              </div>
-            </div>
-          </div>
-          <p class="comparison-note">※ 効果のイメージ図であり、実際の臨床データではありません。効果には個人差があり、すべての方に同様の効果を保証するものではありません。</p>
         </div>
         <p class="prevention-cta">
           20代・30代で「ちょっと気になる」「家族がAGA」という方、ぜひご相談ください。
@@ -214,60 +177,23 @@
     margin-bottom: 24px;
   }
 
-  .mechanism-flow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
+  .mechanism-image {
+    text-align: center;
     margin-bottom: 24px;
   }
 
-  .mechanism-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 24px;
-    background: var(--color-bg-section);
-    border-radius: 12px;
-    min-width: 140px;
+  .mechanism-img-pc {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
-  .mechanism-step.highlight {
-    background: rgba(233, 69, 96, 0.1);
-    border: 2px solid var(--color-highlight);
-  }
-
-  .mechanism-step.danger {
-    background: var(--color-primary);
-    color: #fff;
-  }
-
-  .step-label {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-  }
-
-  .step-desc {
-    font-size: 0.75rem;
-    opacity: 0.7;
-  }
-
-  .mechanism-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--color-text-muted);
-    width: 40px;
-  }
-
-  .arrow-label {
-    font-size: 0.7rem;
-    margin-bottom: 4px;
-    color: var(--color-highlight);
-    font-weight: 600;
-    white-space: nowrap;
+  .mechanism-img-sp {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 
   .mechanism-note {
@@ -395,12 +321,20 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+  }
+
+  .chart-subtitle {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 16px;
+    opacity: 0.8;
   }
 
   .chart-bars {
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
     gap: 12px;
   }
 
@@ -409,6 +343,31 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+  }
+
+  .chart-bar.highlight .bar-fill {
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+  }
+
+  .chart-bar.highlight .bar-value {
+    color: #fff;
+    font-size: 0.85rem;
+  }
+
+  .bar-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    min-height: 22px;
+  }
+
+  .bar-badge.empty {
+    visibility: hidden;
   }
 
   .bar-wrapper {
@@ -445,126 +404,6 @@
     opacity: 0.6;
   }
 
-  .comparison-section {
-    padding: 32px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .comparison-title {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-  .comparison-chart {
-    display: flex;
-    gap: 12px;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .comparison-y-axis {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    opacity: 0.7;
-    padding: 8px 0;
-    text-align: right;
-  }
-
-  .comparison-graph {
-    flex: 1;
-    position: relative;
-    height: 160px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 8px 16px 28px;
-  }
-
-  .graph-line {
-    position: absolute;
-    left: 16px;
-    right: 16px;
-    height: 4px;
-    border-radius: 2px;
-  }
-
-  .graph-line.treated {
-    top: 20%;
-    background: linear-gradient(90deg, #4ade80 0%, #22c55e 100%);
-    clip-path: polygon(0 50%, 10% 40%, 30% 45%, 60% 50%, 100% 55%);
-    height: 60px;
-    background: linear-gradient(180deg, transparent 0%, transparent 45%, #4ade80 45%, #4ade80 55%, transparent 55%);
-  }
-
-  .graph-line.untreated {
-    top: 20%;
-    height: 80px;
-    background: linear-gradient(180deg, transparent 0%, transparent 20%, rgba(255,255,255,0.4) 20%, rgba(255,255,255,0.4) 25%, transparent 25%);
-    clip-path: polygon(0 0, 100% 100%, 100% calc(100% + 5px), 0 5px);
-  }
-
-  .graph-line.treated::before,
-  .graph-line.untreated::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 3px;
-    border-radius: 2px;
-  }
-
-  .graph-line.treated::before {
-    top: 25px;
-    background: #4ade80;
-    transform: rotate(2deg);
-  }
-
-  .graph-line.untreated::before {
-    top: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    transform: rotate(25deg);
-    transform-origin: left;
-  }
-
-  .line-label {
-    position: absolute;
-    right: 0;
-    font-size: 0.75rem;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
-  .graph-line.treated .line-label {
-    top: 15px;
-    color: #4ade80;
-  }
-
-  .graph-line.untreated .line-label {
-    top: 50px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .graph-x-axis {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    right: 16px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    opacity: 0.7;
-  }
-
-  .comparison-note {
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: 16px;
-    opacity: 0.6;
-  }
-
   .prevention-cta {
     padding: 20px 32px;
     background: rgba(0, 0, 0, 0.2);
@@ -582,22 +421,12 @@
       margin-bottom: 32px;
     }
 
-    .mechanism-flow {
-      flex-direction: column;
-      gap: 12px;
+    .mechanism-img-pc {
+      display: none;
     }
 
-    .mechanism-step {
-      width: 100%;
-      max-width: 200px;
-    }
-
-    .mechanism-arrow {
-      transform: rotate(90deg);
-    }
-
-    .arrow-label {
-      transform: rotate(-90deg);
+    .mechanism-img-sp {
+      display: block;
     }
 
     .about-features {
@@ -632,15 +461,15 @@
     }
 
     .chart-bars {
-      height: 120px;
+      height: auto;
     }
 
-    .comparison-section {
-      padding: 24px;
+    .bar-badge {
+      display: none;
     }
 
-    .comparison-graph {
-      height: 140px;
+    .bar-wrapper {
+      height: 80px;
     }
 
     .prevention-cta {
