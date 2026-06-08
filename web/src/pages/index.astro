@@ -8,10 +8,14 @@ import Treatment from '../components/Treatment.astro';
 import Pricing from '../components/Pricing.astro';
 import Flow from '../components/Flow.astro';
 import Access from '../components/Access.astro';
+import Faq from '../components/Faq.astro';
 import Footer from '../components/Footer.astro';
+
+const pageTitle = "仙台夕方AGA | 仙台駅近くでAGA治療・薄毛治療【20代30代男性に】";
+const pageDescription = "仙台駅近くでAGA・薄毛治療。20代・30代の男性に。仕事帰りに通える夜21時まで診療、土日も対応。勾当台公園駅徒歩2分。デュタステリド月5,500円、初診料無料。";
 ---
 
-<Layout title="仙台夕方AGA | 仙台でAGA治療・薄毛治療">
+<Layout title={pageTitle} description={pageDescription}>
   <Header />
   <main>
     <Hero />
@@ -20,6 +24,7 @@ import Footer from '../components/Footer.astro';
     <Treatment />
     <Pricing />
     <Flow />
+    <Faq />
     <Access />
   </main>
   <Footer />

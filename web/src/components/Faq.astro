@@ -1,0 +1,140 @@
+---
+
+---
+
+<section id="faq" class="section">
+  <div class="container">
+    <h2 class="section-title">
+      よくある質問
+      <span>FAQ</span>
+    </h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-question">AGAは何歳から始まりますか？</summary>
+        <div class="faq-answer">
+          <p>AGAは早い方で20代前半から始まります。日本人男性の約26%が20代でAGAを発症しており、30代では約32%に増加します。「まだ若いから大丈夫」ということはなく、早期発見・早期治療が効果的です。</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">学生でも処方してもらえますか？</summary>
+        <div class="faq-answer">
+          <p>20歳以上の方であれば、学生の方でも処方可能です。ただし、20歳未満の方への処方はできません。</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">仕事帰りでも間に合いますか？</summary>
+        <div class="faq-answer">
+          <p>はい、夜21時まで診療しているので、仕事帰りでも十分間に合います。また、土日も診療しておりますので、平日お忙しい方もご利用いただけます。</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">予約なしでも診てもらえますか？</summary>
+        <div class="faq-answer">
+          <p>予約優先となっておりますが、空きがあれば予約なしでも対応可能です。待ち時間を短くするため、LINE予約またはお電話での事前予約をおすすめしています。</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">どのくらいで効果が出ますか？</summary>
+        <div class="faq-answer">
+          <p>個人差がありますが、一般的に3〜6ヶ月程度で効果を実感される方が多いです。AGAは進行性のため、継続的な服用が重要です。</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">費用はどのくらいかかりますか？</summary>
+        <div class="faq-answer">
+          <p>デュタステリド30日分で5,500円（税込）です。初診料・再診料は無料です。診察により最大6ヶ月分まで処方可能ですので、通院の手間も軽減できます。</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section {
+    background: #fff;
+  }
+
+  .faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .faq-item {
+    background: var(--color-bg-section);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question::before {
+    content: "Q.";
+    color: var(--color-highlight);
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .faq-question::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    margin-left: 16px;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+
+  .faq-item[open] .faq-question::after {
+    content: "−";
+  }
+
+  .faq-answer {
+    padding: 0 24px 20px;
+    padding-left: 52px;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.8;
+  }
+
+  @media (max-width: 768px) {
+    .faq-question {
+      padding: 16px 20px;
+      font-size: 0.95rem;
+    }
+
+    .faq-answer {
+      padding: 0 20px 16px;
+      padding-left: 44px;
+    }
+
+    .faq-answer p {
+      font-size: 0.9rem;
+    }
+  }
+</style>

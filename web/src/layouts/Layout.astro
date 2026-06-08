@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "仙台でAGA治療。デュタステリド内服による薄毛治療を提供。夜21時まで診療、土日も対応。勾当台公園駅徒歩2分。" } = Astro.props;
+const { title, description = "仙台駅近くでAGA・薄毛治療。20代・30代の男性に。仕事帰りに通える夜21時まで診療、土日も対応。勾当台公園駅徒歩2分。デュタステリド月5,500円、初診料無料。" } = Astro.props;
 
 const siteUrl = "https://sendai-yugata-aga.koutoudai-yugata-naika.clinic";
 const currentPath = Astro.url.pathname;
@@ -52,6 +52,61 @@ const structuredData = {
   ],
   "priceRange": "自由診療"
 };
+
+const faqStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AGAは何歳から始まりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AGAは早い方で20代前半から始まります。日本人男性の約26%が20代でAGAを発症しており、30代では約32%に増加します。「まだ若いから大丈夫」ということはなく、早期発見・早期治療が効果的です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "学生でも処方してもらえますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "20歳以上の方であれば、学生の方でも処方可能です。ただし、20歳未満の方への処方はできません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "仕事帰りでも間に合いますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、夜21時まで診療しているので、仕事帰りでも十分間に合います。また、土日も診療しておりますので、平日お忙しい方もご利用いただけます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "予約なしでも診てもらえますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "予約優先となっておりますが、空きがあれば予約なしでも対応可能です。待ち時間を短くするため、LINE予約またはお電話での事前予約をおすすめしています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どのくらいで効果が出ますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "個人差がありますが、一般的に3〜6ヶ月程度で効果を実感される方が多いです。AGAは進行性のため、継続的な服用が重要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "費用はどのくらいかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "デュタステリド30日分で5,500円（税込）です。初診料・再診料は無料です。診察により最大6ヶ月分まで処方可能ですので、通院の手間も軽減できます。"
+      }
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -87,6 +142,7 @@ const structuredData = {
     <title>{title}</title>
 
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqStructuredData)} />
 
     <style>
       *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
